@@ -3,12 +3,7 @@
 A WhatsApp-style real-time messaging application for Android, built as a full-stack mobile learning project covering the complete feature set of a modern chat app: real-time one-to-one messaging, user presence, push notifications, and peer-to-peer audio/video calling with a custom Firestore-based signaling layer.
 
 # Demo
-
 https://github.com/user-attachments/assets/c95522ec-aa93-48c4-b71b-eca88c1d0c73
-
-
-
-**Package:** `com.igarciamen.messenger`
 
 ## Features
 
@@ -20,7 +15,7 @@ https://github.com/user-attachments/assets/c95522ec-aa93-48c4-b71b-eca88c1d0c73
 - 🕒 Message timestamps (date + time)
 - 🔒 Firestore & Realtime Database security rules — each user can only access their own data and conversations they participate in
 
-Text, audio, and video are the only supported communication modes — file/attachment sharing is intentionally out of scope.
+Text, audio, and video are the only supported communication modes, file/attachment sharing is intentionally out of scope.
 
 ## Tech Stack
 
@@ -87,7 +82,7 @@ Security rules restrict every read/write to the authenticated user's own data or
 ### Prerequisites
 - Android Studio (latest stable)
 - A Firebase project with **Authentication** (Email/Password), **Cloud Firestore**, **Realtime Database**, and **Cloud Messaging** enabled
-- A [Metered](https://www.metered.ca) free account for TURN server credentials (500 MB/month, no card required)
+- A [Metered](https://www.metered.ca) free account for TURN server credentials (500 MB/month)
 
 ### Steps
 1. Clone the repository.
