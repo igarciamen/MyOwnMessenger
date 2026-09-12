@@ -2,6 +2,12 @@
 
 A WhatsApp-style real-time messaging application for Android, built as a full-stack mobile learning project covering the complete feature set of a modern chat app: real-time one-to-one messaging, user presence, push notifications, and peer-to-peer audio/video calling with a custom Firestore-based signaling layer.
 
+# Demo
+
+https://github.com/user-attachments/assets/c95522ec-aa93-48c4-b71b-eca88c1d0c73
+
+
+
 **Package:** `com.igarciamen.messenger`
 
 ## Features
