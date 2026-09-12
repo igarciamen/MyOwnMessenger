@@ -75,7 +75,7 @@ calls/{callId}/calleeCandidates
 status/{uid}                     — state ("online"/"offline"), lastChanged
 ```
 
-Security rules restrict every read/write to the authenticated user's own data or conversations/calls they participate in — see `firestore.rules` and `database.rules.json` for the exact rule set.
+Security rules restrict every read/write to the authenticated user's own data or conversations/calls they participate in, see `firestore.rules` and `database.rules.json` for the exact rule set.
 
 ## Setup
 
@@ -107,10 +107,3 @@ Security rules restrict every read/write to the authenticated user's own data or
 - **TURN quota**: the free Metered plan provides 500 MB/month of relayed traffic, renewing automatically; sufficient for development and testing, not sized for production-scale usage.
 - **No file/media attachments**: by design, only text, audio calls, and video calls are supported.
 
-## Development Notes
-
-This project was built incrementally across 8 blocks (foundations, auth, data model, real-time chat, presence, notifications, calling, and final hardening), with every real bug encountered along the way diagnosed from Logcat evidence and documented — including several non-obvious race conditions in WebRTC ICE candidate exchange, Firebase Realtime Database listener lifecycle, and Foreground Service requirements for background audio. See the accompanying technical documentation (Word) for the full incident log.
-
-## License
-
-This is a learning/portfolio project. No license has been assigned.
